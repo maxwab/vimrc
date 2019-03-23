@@ -91,6 +91,7 @@ set listchars=tab:▸\ ,eol:¬
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
+set term=screen-256color
 set background=dark                                                                                                      
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
