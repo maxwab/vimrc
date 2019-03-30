@@ -84,16 +84,21 @@ set listchars=tab:▸\ ,eol:¬
 map <leader>l :set list!<CR> " Toggle tabs and EOL
 
 set term=screen-256color
-set background=dark                                                                                                      
+set background=dark
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 colorscheme solarized 
 
 " tags
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+noremap <silent> <Leader>y :TagbarToggle<CR>
 set tags=tags
 
 " nerdtree
+map <C-v> :NERDTreeTabsToggle<CR>
+noremap <leader>d "_d
 let g:NERDTreeNodeDelimiter = "\u00a0"
 set mouse=a
+
+set colorcolumn=80 " color colon #80
